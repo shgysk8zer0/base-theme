@@ -22,16 +22,20 @@
 	text-shadow: none;
 }
 :root {
-	background-color: var(--primary-color);
 	background-image: url(../../images/backgrounds/curls-mono.svgz);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-blend-mode: multiply;
 	color: var(--default-color);
 	text-shadow: var(--shadow);
 	cursor: var(--default-cursor);
+}
+@supports(background-blend-mode: initial) {
+	:root {
+		background-color: var(--primary-color);
+		background-blend-mode: multiply;
+	}
 }
 :root.loading {
 	cursor: progress;
