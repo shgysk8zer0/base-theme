@@ -22,7 +22,8 @@
 	text-shadow: none;
 }
 :root {
-	background-image: url(../../images/backgrounds/curls-mono.svgz);
+	background-color: black;
+	background-image: var(--main-bg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -32,7 +33,7 @@
 	cursor: var(--default-cursor);
 }
 @supports(background-blend-mode: initial) {
-	:root {
+	:root.CSSsupports {
 		background-color: var(--primary-color);
 		background-blend-mode: multiply;
 	}
@@ -60,7 +61,7 @@ body > header {
 	align-self: flex-start;
 }
 body > header h1 {
-	font-family: 'PressStart';
+	font-family: var(--header-font);
 	text-align: center;
 	text-shadow: 0.1rem 0.1rem var(--shadow), 0.2rem .02rem 0.3rem gray, 0 0 3rem var(--highlight-color);
 	margin-bottom: 1rem;
@@ -125,31 +126,31 @@ article a:visited {
 	color: var(--primary-color);
 }
 main a::after {
-	content: '  K';
+	content: var(--link-icon);
 }
 a[rel=tag]::after {
-	content: '  , ';
+	content: var(--tag-icon);
 }
 [rel=next]::after {
 	font-size: 1rem;
 	font-family: var(--icon-font);
 	color: var(--default-color);
-	content: ')';
+	content: var(--next-icon);
 }
 [rel=prev]::after {
 	font-size: 1rem;
 	font-family: var(--icon-font);
 	color: var(--default-color);
-	content: '(';
+	content: var(--prev-icon);
 }
 a[rel=bookmark]::after {
 	content: '';
 }
 main a[target="_blank"]::after {
-	content: '  D';
+	content: var(--new-tab-icon);
 }
 [download]::after {
-	content: '  A';
+	content: var(--download-icon);
 }
 button, [role=button] {
 	min-width: 2rem;
@@ -224,11 +225,11 @@ label+input[type=checkbox] {
 }
 input[type=checkbox]+label::after {
 	font-family: var(--icon-font);
-	content: '  \\';
+	content: var(--unchecked-icon);
 	color: red;
 }
 input[type=checkbox]:checked+label::after {
-	content: '  .';
+	content: var(--checked-icon);
 	color: green;
 }
 input[type=search] {
@@ -260,7 +261,6 @@ blockquote {
 	font-family: 'Libertine';
 }
 blockquote::before, blockquote::after {
-
 	display: inline;
 	font-size: 2rem;
 	font-family: 'Acme';
@@ -290,11 +290,11 @@ a, button:not(:disabled), [role=button], input[type=submit], input[type=reset], 
 }
 .no-details details[open] > summary::before {
 	font-family: var(--icon-font);
-	content: '['
+	content: var(--dropdown-open-icon);
 }
 .no-details details:not([open]) > summary::before {
 	font-family: var(--icon-font);
-	content: ']'
+	content: var(--dropdown-closed-icon);
 }
 .no-details details:not([open]) > :not(summary) {
 	display: none;
@@ -327,7 +327,7 @@ progress[value]::-moz-progress-bar {
 }
 [data-close]::after, [data-delete]::after {
 	font-family: var(--icon-font);
-	content: '\'';
+	content: var(--close-icon);
 }
 code {
 	font-size: 0.9rem;
@@ -469,11 +469,11 @@ article nav a {
 	color: inherit;
 }
 article header h1 {
-	font-family: 'PressStart';
+	font-family: var(--article-header-font);
 	font-size: 1.8rem;
 }
 article section {
-	font-family: 'Comfortaa';
+	font-family: var(--article-font);
 	max-width: 100%;
 	font-size: 1.1rem;
 	color: var(--alt-color);
