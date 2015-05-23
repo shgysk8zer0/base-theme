@@ -1,10 +1,34 @@
 /*============================List of all available fonts============================*/
 @font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'), url('../../fonts/roboto.woff2') format('woff2'), url('../../fonts/roboto.woff') format('woff');
+}
+@font-face {
+	font-family: 'Comfortaa';
+	src: local('Comfortaa'), local('Comfortaa Regular'), url('../../fonts/Comfortaa.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Ubuntu'), url('../../fonts/ubuntu.woff2') format('woff2'), url('../../fonts/ubuntu.woff') format('woff');
+}
+@font-face {
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 400;
 	src: local('Open Sans'), local('OpenSans'),url('../../fonts/OpenSans.woff2') format('woff2'), url('../../fonts/OpenSans.woff') format('woff'), url('../../fonts/OpenSans.ttf') format('truetype');
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face{
+	font-family:'Libertine';
+	font-weight:normal;
+	font-style:normal;
+	src:local('Libertine'),url('../../fonts/Libertine.woff')format('woff');
 }
 @font-face{
 	font-family: 'Alice';
@@ -23,6 +47,18 @@
 	src:local('GNUTypewriter'),url('../../fonts/gnome-typewriter.woff')format('woff'),url('//themes.googleusercontent.com/static/fonts/acme/v2/-nVwQJDyFoBcrvpER8f-lA.woff')format('woff'),url('http://openfontlibrary.org/assets/fonts/gnutypewriter/8a7cb57723df9125503083ed59e7a11c/e47a6e209a23b19c08d3d6e6a6db50d7/GNUTypewriterStandard.otf')format('opentype');
 	font-weight:normal;
 	font-style:normal;
+}
+@font-face{
+	font-family:'PressStart';
+	font-weight:normal;
+	font-style:normal;
+	src:local('Press Start 2P'),url('../../fonts/PressStart2P.woff')format('woff'),url('../../fonts/PressStart2P.ttf')format('truetype'), url('//themes.googleusercontent.com/static/fonts/pressstart2p/v1/8Lg6LX8-ntOHUQnvQ0E7o4FgepxKMIY7yvDgT9frFvg.woff')format('woff');
+}
+@font-face{
+	font-family:'Web Symbols';
+	font-style:normal;
+	font-weight:400;
+	src: local('WebSymbols-Regular'), url('../../fonts/WebSymbols-Regular.woff')format('woff'),url('http://openfontlibrary.org/assets/fonts/web-symbols/26570e66618b46bd347b580e043282f4/eb6adba02c2fa4e9d8ded2e870458081/WebSymbolsRegular.otf')format('opentype'),url('../../fonts/WebSymbols-Regular.woff')format('woff');
 }
 @font-face{
 	font-family:'Cookies';
@@ -61,12 +97,6 @@
 	src:local('Griffy'),url('../../fonts/Griffy.woff')format('woff');
 }
 @font-face{
-	font-family:'PressStart';
-	font-weight:normal;
-	font-style:normal;
-	src:local('Press Start 2P'),url('../../fonts/PressStart2P.woff')format('woff'),url('../../fonts/PressStart2P.ttf')format('truetype'), url('//themes.googleusercontent.com/static/fonts/pressstart2p/v1/8Lg6LX8-ntOHUQnvQ0E7o4FgepxKMIY7yvDgT9frFvg.woff')format('woff');
-}
-@font-face{
 	font-family:'Rye';
 	font-weight:normal;
 	font-style:normal;
@@ -79,22 +109,10 @@
 	src:local('Essays'),url('../../fonts/Essays1743.woff')format('woff');
 }
 @font-face{
-	font-family:'Libertine';
-	font-weight:normal;
-	font-style:normal;
-	src:local('Libertine'),url('../../fonts/Libertine.woff')format('woff');
-}
-@font-face{
 	font-family:'Love Ya Like A Sister';
 	font-style:normal;
 	font-weight:400;
 	src:local('Love Ya Like A Sister'),url('../../fonts/sketch.woff')format('woff');
-}
-@font-face{
-	font-family:'Web Symbols';
-	font-style:normal;
-	font-weight:400;
-	src: local('WebSymbols-Regular'), url('../../fonts/WebSymbols-Regular.woff')format('woff'),url('http://openfontlibrary.org/assets/fonts/web-symbols/26570e66618b46bd347b580e043282f4/eb6adba02c2fa4e9d8ded2e870458081/WebSymbolsRegular.otf')format('opentype'),url('../../fonts/WebSymbols-Regular.woff')format('woff');
 }
 @font-face{
 	font-family:'Outline';
@@ -132,17 +150,3 @@
 	font-weight: 400;
 	src: local('Amarante'),url('../../fonts/DroidSansMono.woff')format('woff'),url('../../fonts/Amarante.ttf')format('truetype'),url('//themes.googleusercontent.com/static/fonts/amarante/v1/5dF-vhm2PDTNvpxu3h5td_esZW2xOQ-xsNqO47m55DA.woff')format('woff');
 }
-@font-face {
-	font-family: 'Comfortaa';
-	src: local('Comfortaa'), local('Comfortaa Regular'), url('../../fonts/Comfortaa.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Roboto'), local('Roboto-Regular'), url('../../roboto.woff2') format('woff2'), url('../../roboto.woff') format('woff');
-}
-
