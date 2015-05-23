@@ -58,7 +58,7 @@
 	font-family: 'Web Symbols';
 	font-style: normal;
 	font-weight: 400;
-	src: local('WebSymbols-Regular'), url('../../fonts/WebSymbols-Regular.woff2') format('woff2'), url('../../fonts/WebSymbols-Regular.woff') format('woff');
+	src: local('WebSymbols-Regular'), url('../../fonts/WebSymbols-Regular.woff') format('woff');
 }
 @font-face {
 	font-family: 'Cookies';
