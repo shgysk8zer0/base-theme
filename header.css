@@ -1,0 +1,82 @@
+body > header {
+	flex: 0 1 100%;
+	background: rgb(60, 60, 60) none;
+	background: rgba(60, 60, 60, 0.7) none;
+	background: transparent var(--tint-glass);
+	border-bottom: 0.2rem solid var(--border-color);
+	box-shadow: 0 0 3rem var(--shadow) inset;
+	align-self: flex-start;
+}
+body > header h1 {
+	font-family: var(--header-font);
+	text-align: center;
+	text-shadow: 0.1rem 0.1rem var(--shadow), 0.2rem .02rem 0.3rem gray, 0 0 3rem var(--highlight-color);
+	margin-bottom: 1rem;
+}
+body header > h1 > a {
+	color: inherit;
+	padding-right: 0.75rem;
+	border-width: 0 0.5rem 0 0;
+	border-style: solid;
+	border-color: transparent;
+	animation: cursor 750ms infinite linear alternate;
+}
+@supports((display: flex) or (display: -webkit-flex) or (display: -ms-flex)) {
+	body > header nav {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+body > header nav a {
+	flex: 1 1 auto;
+	color: whitesmoke;
+	text-shadow: 0.1rem 0.1rem 0.1rem dimgray;
+	font-size: 1.1rem;
+	font-family: 'Acme';
+	font-weight: 600;
+	text-align: center;
+	overflow: elipsis;
+	padding: 0.7rem 0;
+	background-image: url('../../images/gradients/header_links.png');
+	background-image: linear-gradient(var(--primary-color), var(--highlight-color), var(--primary-color));
+	background-size: 1px 100%;
+	background-repeat: repeat-x;
+	border: 0.2rem outset var(--border-color);
+	transition: all 300ms;
+}
+body > header nav a:hover {
+	text-shadow: 0 0 0.1rem black, 0 0 0.5rem var(--highlight-color);
+	transform: translateY(-0.3rem);
+	box-shadow: 0 0 1rem var(--shadow);
+
+}
+body > header nav a:first-of-type {
+	border-radius: 1rem 0 0 1rem;
+}
+body > header nav a:last-of-type {
+	border-radius: 0 1rem 1rem 0;
+}
+body > header nav a:not(:last-of-type) {
+	border-right: 0.2rem outset var(--border-color);
+}
+body > header nav form {
+	flex: 0 1 100%;
+}
+body > header h1::before {
+	content: '';
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 1.2em;
+	height: 1.2em;
+	background-image: url('/favicon.svgz');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+header input[type=search] {
+	width: 7rem;
+	max-width: 80%;
+	transition: width 500ms;
+}

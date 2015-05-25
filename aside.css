@@ -1,0 +1,45 @@
+main aside {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: var(--sidebar-width);
+	float: left;
+}
+aside h3 {
+	padding: 0.2rem;
+	border-bottom: 0.2rem solid var(--primary-color);
+	border-radius: 1rem 1rem 0 0;
+	top: 0;
+	left: 0;
+	padding: 0.4rem;
+	background: rgb(60, 60, 60) none;
+	background: rgba(60, 60, 60, 0.9) none;
+	background: transparent var(--header-bg);
+	color: var(--default-color);
+	font-family: 'Acme';
+	font-size: 1.3rem;
+	text-shadow: 0.1rem 0.1rem 0 dimgray, 0.15rem 0.15rem 0 black;
+	box-shadow: 0 0 1rem var(--shadow);
+}
+aside li {
+	margin-bottom: 0.5rem;
+	list-style: square outside;
+	font-size: 1.2rem;
+}
+aside li a {
+	color: inherit;
+	transition: all 300ms;
+}
+aside li a:hover {
+	color: var(--primary-color);
+	padding-left: 1.2rem;
+	text-shadow: -0.4rem 0rem 0.2rem var(--highlight-color);
+}
+aside > :not(h3) {
+	color: #333;
+	background-color: rgb(233, 233, 233);
+	background-image: linear-gradient(whitesmoke , #ddd);
+	border: 0.2rem outset var(--border-color);
+	border-radius: 1rem 1rem 0 0;
+	box-shadow: -1rem 1rem 1rem var(--shadow), 0 0 1rem 0 var(--shadow) inset;
+}

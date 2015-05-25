@@ -1,0 +1,18 @@
+img[src$="CreativeCommons.svgz"],
+article footer svg
+{
+	width: 6rem;
+	height: 2.6rem;
+}
+footer a::after {
+	display: none;
+}
+body > footer {
+	border-top: 0.3rem solid var(--primary-color);
+	padding: 1rem;
+	background: whitesmoke none;
+	background: transparent linear-gradient(whitesmoke, gainsboro);
+	box-shadow: 0 -1rem 2rem var(--shadow) inset;
+	align-self: flex-end;
+	flex: 0 1 100%;
+}

@@ -1,0 +1,130 @@
+main {
+	margin: 2em 0;
+	padding: 2em;
+	width: var(--main-width);
+	position: relative;
+	left: calc(50% - var(--main-width) / 2);
+	background: rgb(110, 110, 110) none;
+	background: rgba(110, 110, 110, 0.8) none;
+	background: transparent var(--glass-grad);
+	border-radius: 2em;
+	transform-origin: top;
+	transform-style: preserve-3d;
+}
+main:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+main > article,
+main > form,
+main > .tags,
+main > [data-error]
+{
+	color: var(--alt-color);
+	background-color: whitesmoke;
+	border-radius: inherit;
+	padding: inherit;
+	border: 0.3rem outset var(--border-color);
+	word-wrap: break-word;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: var(--article-width);
+	float: right;
+	clear: right;
+}
+article a:visited {
+	color: var(--primary-color);
+}
+main a::after {
+	content: var(--link-icon);
+}
+article header
+{
+	top: 0;
+	left: 0;
+	padding: 0.4rem;
+	background: rgb(60, 60, 60) none;
+	background: rgba(60, 60, 60, 0.9) none;
+	background: transparent var(--header-bg);
+	color: var(--default-color);
+	font-family: 'Acme';
+	font-size: 1.3rem;
+	text-shadow: 0.1rem 0.1rem 0 dimgray, 0.15rem 0.15rem 0 black;
+	box-shadow: 0 0 1rem var(--shadow);
+}
+@media screen and (min-width: 800px) {
+	article header,
+	aside h3
+	{
+		position: sticky;
+	}
+}
+article nav a {
+	color: inherit;
+}
+article header h1 {
+	font-family: var(--article-header-font);
+	font-size: 1.8rem;
+}
+article section {
+	font-family: var(--article-font);
+	max-width: 100%;
+	font-size: 1.1rem;
+	color: var(--alt-color);
+}
+article header + :first-of-type {
+	margin-top: 1rem;
+}
+article > :not(footer) img {
+	border: 0.2rem outset var(--primary-color);
+	box-shadow: 0.3rem 0.3rem 0.5rem var(--shadow);
+	transition: all 500ms;
+}
+@supports((display: flex) or (display: -webkit-flex) or (display: -ms-flex)) {
+	main {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: flex-start;
+		flex-basis: var(--main-width);
+		position: static;
+	}
+	main aside {
+		flex-basis: var(--sidebar-width);
+		order: var(--sidebar-position);
+	}
+	main > article,
+	main > form,
+	main > .tags,
+	main > [data-error]
+	{
+		flex-basis: var(--article-width);
+		order: var(--article-position);
+		max-width: var(--article-width);
+	}
+	@media screen and (max-width: 999px) {
+		main {
+			flex-direction: column;
+			padding: 1rem;
+			flex: 0 1 95%;
+		}
+		main article,
+		main .tags,
+		main > [data-error]
+		{
+			flex: 0 1 auto;
+			min-width: 100%;
+			order: 1;
+		}
+		main aside {
+			flex: 0 1 auto;
+			min-width: 100%;
+			order: 2;
+		}
+		iframe {
+			height: auto;
+		}
+	}
+}

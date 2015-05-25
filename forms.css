@@ -1,0 +1,79 @@
+form[name="new_post"] {
+	width: 95%;
+}
+form[name="new_post"] textarea {
+	width: 35rem;
+	height: 8rem;
+}
+select,
+input:not([type=checkbox]):not([type=submit]):not([type=reset]):not([type=file])
+{
+	background-color: transparent;
+	color: inherit;
+	border-color: transparent transparent var(--border-color) transparent;
+	border-width: 0 0 1px 0;
+	border-style: solid;
+}
+input:focus {
+	box-shadow: 0 0 0.5rem cyan;
+}
+input:focus:valid {
+	background-image: url(../../images/icons/check.svgz);
+	background-position: right top;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 0.5rem green;
+}
+input:focus:invalid {
+	background-image: url(../../images/icons/x.svgz);
+	background-position: right top;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 0.5rem red;
+}
+label[data-icon]:empty {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 2rem;
+	font-size: 0.7em;
+	text-align: center;
+	color: dimgray;
+	border-color: transparent transparent var(--border-color) transparent;
+	border-width: 0 0 1px 0;
+	border-style: solid;
+}
+label[data-icon]:empty + input {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	padding-left: 1rem;
+	margin-left: -0.4em;
+}
+label > img,
+label > svg
+{
+	height: 1em;
+	width: auto;
+}
+label > svg,
+label > svg *
+{
+	fill: currentColor;
+}
+input[type=checkbox] {
+	display: none;
+}
+label+input[type=checkbox] {
+	display: initial;
+}
+input[type=checkbox] + label::after {
+	font-family: var(--icon-font);
+	content: var(--unchecked-icon);
+	color: red;
+}
+input[type=checkbox]:checked + label::after {
+	content: var(--checked-icon);
+	color: green;
+}
+input[type=search]:focus {
+	width: 20rem;
+}

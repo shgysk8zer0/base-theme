@@ -1,0 +1,34 @@
+address {
+	font-size: 0.8rem;
+	padding: 2rem 2rem 0 2rem;
+	-moz-columns: 2 300px;
+	-webkit-columns: 2 300px;
+	columns: 2 300px;
+	-moz-column-gap: 3rem;
+	-webkit-column-gap: 3rem;
+	column-gap: 3em;
+	-moz-column-rule: 0.2em solid var(--primary-color);
+	-webkit-column-rule: 0.2em solid var(--primary-color);
+	column-rule: 0.2em solid var(--primary-color);
+}
+address a {
+	color: var(--primary-color);
+	transition: color 600ms;
+}
+address a:hover {
+	color: var(--link-color);
+}
+address svg {
+	height: 1rem;
+	width: auto;
+	fill: currentColor;
+}
+address svg * {
+	fill: inherit;
+}
+address a svg {
+	transition: all 600ms;
+}
+address a:hover > svg {
+	transform: translateX(0.5em) scale(1.2) skew(-15deg);
+}
