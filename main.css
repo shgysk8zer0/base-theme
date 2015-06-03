@@ -34,12 +34,6 @@ main > [data-error]
 	float: right;
 	clear: right;
 }
-article a:visited {
-	color: var(--primary-color);
-}
-main a::after {
-	content: var(--link-icon);
-}
 article header
 {
 	top: 0;
@@ -54,9 +48,6 @@ article header
 	text-shadow: 0.1rem 0.1rem 0 dimgray, 0.15rem 0.15rem 0 black;
 	box-shadow: 0 0 1rem var(--shadow);
 }
-article nav a {
-	color: inherit;
-}
 article header h1 {
 	font-family: var(--article-header-font);
 	font-size: 1.8rem;
@@ -69,6 +60,15 @@ article section {
 }
 article header + :first-of-type {
 	margin-top: 1rem;
+}
+article nav a {
+	color: inherit;
+}
+article a:visited {
+	color: var(--primary-color);
+}
+main a::after {
+	content: var(--link-icon);
 }
 article > :not(footer) img {
 	border: 0.2rem outset var(--primary-color);
