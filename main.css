@@ -19,7 +19,8 @@ main:after {
 main > article,
 main > form,
 main > .tags,
-main > [data-error]
+main > [data-error],
+main > [data-view-source]
 {
 	color: var(--alt-color);
 	background-color: whitesmoke;
@@ -91,7 +92,8 @@ article > :not(footer) img {
 	main > article,
 	main > form,
 	main > .tags,
-	main > [data-error]
+	main > [data-error],
+	main > [data-view-source]
 	{
 		flex-basis: var(--article-width);
 		order: var(--article-position);
@@ -121,3 +123,4 @@ article > :not(footer) img {
 		}
 	}
 }
+
