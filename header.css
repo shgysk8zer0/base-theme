@@ -9,7 +9,6 @@ body > header {
 }
 body > header h1 {
 	font-family: var(--header-font);
-	text-align: center;
 	text-shadow: 0.1rem 0.1rem var(--shadow), 0.2rem .02rem 0.3rem gray, 0 0 3rem var(--highlight-color);
 	margin-bottom: 1rem;
 }
@@ -21,22 +20,14 @@ body header > h1 > a {
 	border-color: transparent;
 	animation: cursor 750ms infinite linear alternate;
 }
-@supports((display: flex) or (display: -webkit-flex) or (display: -ms-flex)) {
-	body > header nav {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-}
 body > header nav a {
-	flex: 1 1 auto;
+	flex: 0 1 auto;
 	color: whitesmoke;
 	text-shadow: 0.1rem 0.1rem 0.1rem dimgray;
 	font-size: 1.1rem;
 	font-family: 'Acme';
 	font-weight: 600;
-	text-align: center;
-	overflow: elipsis;
+	text-overflow: ellipsis;
 	padding: 0.7rem 0;
 	background-image: url('../../images/gradients/header_links.png');
 	background-image: linear-gradient(var(--primary-color), var(--highlight-color), var(--primary-color));

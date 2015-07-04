@@ -78,8 +78,6 @@ article > :not(footer) img {
 }
 @supports((display: flex) or (display: -webkit-flex) or (display: -ms-flex)) {
 	main {
-		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
 		align-content: flex-start;
 		flex-basis: var(--main-width);
@@ -123,4 +121,3 @@ article > :not(footer) img {
 		}
 	}
 }
-
