@@ -21,7 +21,7 @@ body header > h1 > a {
 	animation: cursor 750ms infinite linear alternate;
 }
 body > header nav a {
-	flex: 0 1 auto;
+	flex: 1 1 auto;
 	color: whitesmoke;
 	text-shadow: 0.1rem 0.1rem 0.1rem dimgray;
 	font-size: 1.1rem;
