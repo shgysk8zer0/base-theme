@@ -13,3 +13,9 @@
 		font-size: 3vw;
 	}
 }
+body {
+	min-height: 100vh;
+	align-content: space-between;
+	align-items: stretch;
+	justify-content: space-between;
+}

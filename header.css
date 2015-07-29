@@ -1,5 +1,5 @@
 body > header {
-	flex: 0 1 100%;
+	flex: 1 0 auto;
 	background: rgb(60, 60, 60) none;
 	background: rgba(60, 60, 60, 0.7) none;
 	background: transparent var(--tint-glass);
