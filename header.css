@@ -7,6 +7,9 @@ body > header {
 	box-shadow: 0 0 3rem var(--shadow) inset;
 	align-self: flex-start;
 }
+body > header:hover nav a {
+	will-change: transform;
+}
 body > header h1 {
 	font-family: var(--header-font);
 	text-shadow: 0.1rem 0.1rem var(--shadow), 0.2rem .02rem 0.3rem gray, 0 0 3rem var(--highlight-color);
